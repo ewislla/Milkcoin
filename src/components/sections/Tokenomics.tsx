@@ -66,7 +66,7 @@ const Tokenomics: React.FC = () => {
             className="flex justify-center"
           >
             <div className="text-6xl md:text-8xl">
-              🐄
+              
             </div>
           </motion.div>
         </div>

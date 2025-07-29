@@ -45,19 +45,32 @@ const Roadmap: React.FC = () => {
   return (
     <section className="py-20 px-4" id="roadmap">
       <div className="container mx-auto">
+        {/* Heading + Subtitle */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F035BE]">
-            MOO MAP 🗺️
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F035BE]">
+            MOO MAP 
           </h2>
-          <p className="text-xl text-gray-300">Our journey to the moon</p>
+          <p className="text-xl text-gray-300 mb-6">Our journey to the moon</p>
+
+          {/* Image goes here */}
+          <motion.img
+            src="/assets/roadmap.jpeg" // Replace with your actual roadmap image
+            alt="Roadmap Visual"
+            className="mx-auto rounded-xl shadow-lg"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          />
         </motion.div>
-        
+
+        {/* Roadmap Phases */}
         <div className="relative">
           <div className="space-y-12">
             {phases.map((phase, index) => (
@@ -85,11 +98,11 @@ const Roadmap: React.FC = () => {
                         {phase.period}
                       </span>
                     </div>
-                    
+
                     <h3 className="text-2xl font-bold mb-4 text-white">
                       {phase.title}
                     </h3>
-                    
+
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIndex) => (
                         <motion.li

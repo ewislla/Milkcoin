@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from '../ui/Button';
+// import Button from '../ui/Button';
 
-const nftVariants = [
-  { name: "Galaxy Explorer", rarity: "Common", id: 1 },
-  { name: "Nebula Navigator", rarity: "Rare", id: 2 },
-  { name: "Cosmic Commander", rarity: "Epic", id: 3 },
-  { name: "Stellar Supreme", rarity: "Legendary", id: 4 }
-];
+// const nftVariants = [
+//   { name: "Galaxy Explorer", rarity: "Common", id: 1 },
+//   { name: "Nebula Navigator", rarity: "Rare", id: 2 },
+//   { name: "Cosmic Commander", rarity: "Epic", id: 3 },
+//   { name: "Stellar Supreme", rarity: "Legendary", id: 4 }
+// ];
 
 const NFT: React.FC = () => {
   return (
@@ -18,16 +18,20 @@ const NFT: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F035BE]">
-            Galactic Grazers 🐄🚀
+            Galactic Grazers
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
             Our NFT collection brings the cows to space. Upgrade, fuse, and unlock milk-tier rewards in the MOOniVerse.
           </p>
+          <p className="text-lg text-[#00F5FF] font-semibold">
+            Coming soon...
+          </p>
         </motion.div>
-        
+
+        {/*
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {nftVariants.map((nft, index) => (
             <motion.div
@@ -44,11 +48,11 @@ const NFT: React.FC = () => {
                   🐄
                 </span>
               </div>
-              
+
               <h3 className="text-xl font-bold mb-2 text-white">
                 {nft.name}
               </h3>
-              
+
               <div className="flex justify-between items-center">
                 <span className={`px-3 py-1 rounded-full text-sm font-bold ${
                   nft.rarity === 'Common' ? 'bg-gray-600 text-white' :
@@ -65,7 +69,7 @@ const NFT: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,6 +81,7 @@ const NFT: React.FC = () => {
             View Collection
           </Button>
         </motion.div>
+        */}
       </div>
     </section>
   );
