@@ -6,7 +6,7 @@ const phases = [
     title: "Genesis",
     period: "Q2 2025",
     items: [
-      "Launch $MILKED token (ERC-20)",
+      "Launch $MILKED token (SOL)",
       "Branding reveal + #GotMilked campaign",
       "Uniswap listing & LP lock",
       "Community launch platforms"
@@ -23,7 +23,7 @@ const phases = [
   },
   {
     title: "Meme Economy",
-    period: "Q3 2026",
+    period: "Q3 2025",
     items: [
       "NFT Fusion & MooDAO voting",
       "Cream Token ($CMT) launch",

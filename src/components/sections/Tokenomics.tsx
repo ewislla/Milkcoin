@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const tokenInfo = [
   { label: "Symbol", value: "$MILKED" },
-  { label: "Chain", value: "Ethereum (ERC-20)" },
+  { label: "Chain", value: "Solana" },
   { label: "Features", value: "Anti-whale, Community-first" },
   { label: "Contract", value: "HGntnofpfzjnt3FzShUXAfWonim1ymKijrfF7PCAmoon" }
 ];
