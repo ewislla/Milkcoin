@@ -4,7 +4,7 @@ import { MessageCircle, Users, Twitter, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
     {
       name: "Telegram",
@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
     {
       name: "Twitter",
       icon: Twitter,
-      href: "#",
-    }
+      href: "https://x.com/MilkedNest",
+    },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           >
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <span className="text-4xl">🐄</span>
-              <span className="text-2xl font-bold text-[#F035BE]">MILK COIN</span>
+              <span className="text-2xl font-bold text-[#F035BE]">$MILK COIN</span>
             </div>
             <p className="text-gray-400 text-sm">
               To the MOOoon we go! 🚀
@@ -100,16 +100,16 @@ const Footer: React.FC = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} MILK COIN. All rights reserved.
+              © {currentYear} MilkedNest. All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-2 text-gray-400 text-sm">
               <span>Made with</span>
               <Heart size={16} className="text-[#F035BE] fill-current" />
               <span>by the community</span>
             </div>
           </div>
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

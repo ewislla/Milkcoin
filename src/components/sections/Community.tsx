@@ -19,7 +19,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: Twitter,
-    href: "#",
+    href: "https://x.com/MilkedNest",
     color: "#1DA1F2"
   }
 ];
