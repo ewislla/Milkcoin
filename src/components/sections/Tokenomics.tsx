@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const tokenInfo = [
-  { label: "Symbol", value: "$MILKED" },
+  { label: "Symbol", value: "$MILK" },
   { label: "Chain", value: "Solana" },
   { label: "Features", value: "Anti-whale, Community-first" },
   { label: "Contract", value: "HGntnofpfzjnt3FzShUXAfWonim1ymKijrfF7PCAmoon" }
