@@ -20,12 +20,20 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const target = document.querySelector(href);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 200);
+    }
+  };
 
   return (
     <motion.nav
@@ -40,8 +48,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          
-          {/* Logo with Glow */}
+          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 sm:gap-3 cursor-pointer flex-shrink-0 relative"
@@ -59,7 +66,7 @@ const Navbar: React.FC = () => {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <motion.a
@@ -87,14 +94,13 @@ const Navbar: React.FC = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleMenu}
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden w-10 h-10 flex items-center justify-center text-white hover:text-[#F035BE] transition-colors duration-300 border border-[#F035BE]/30 rounded-lg hover:border-[#F035BE] hover:bg-[#F035BE]/10"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </motion.button>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
@@ -112,10 +118,10 @@ const Navbar: React.FC = () => {
                   <motion.a
                     key={link.name}
                     href={link.href}
+                    onClick={(e) => handleLinkClick(e, link.href)}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    onClick={() => setIsOpen(false)}
                     className="block px-4 py-3 text-white hover:text-[#F035BE] hover:bg-[#F035BE]/10 transition-all duration-300 rounded-lg mx-4 font-medium border-l-2 border-transparent hover:border-[#F035BE]"
                   >
                     {link.name}

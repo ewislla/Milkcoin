@@ -20,7 +20,7 @@ const Tokenomics: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F035BE]">
-            Tokenomics 📊
+            Tokenomics 
           </h2>
           <p className="text-xl text-gray-300">
             Fair, transparent, and community-driven
