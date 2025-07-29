@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
               <div className="absolute inset-0 bg-[#F035BE]/20 blur-lg rounded-full animate-pulse z-[-1]" />
             </div>
             <span className="text-lg sm:text-xl lg:text-2xl font-bold text-[#F035BE]">
-              $MiLKED
+              $MILKED
             </span>
           </motion.div>
 
