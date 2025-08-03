@@ -72,6 +72,7 @@ const Navbar: React.FC = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleLinkClick(e, link.href)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-white hover:text-[#F035BE] transition-colors duration-300 font-medium text-sm xl:text-base relative group"
@@ -80,9 +81,21 @@ const Navbar: React.FC = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F035BE] transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
+
+            {/* Whitepaper Link - Desktop */}
+            <motion.a
+              href="/whitepaper.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white hover:text-[#F035BE] transition-colors duration-300 font-semibold text-sm xl:text-base relative group"
+            >
+              Whitepaper
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F035BE] transition-all duration-300 group-hover:w-full"></span>
+            </motion.a>
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Button 
               href="https://t.me/+qqkgcx-8_kgyOGNh"
@@ -127,6 +140,17 @@ const Navbar: React.FC = () => {
                     {link.name}
                   </motion.a>
                 ))}
+
+                {/* Whitepaper Link - Mobile */}
+                <a
+                  href="/whitepaper.pdf"
+                  download
+                  className="block px-4 py-3 text-white hover:text-[#F035BE] hover:bg-[#F035BE]/10 transition-all duration-300 rounded-lg mx-4 font-semibold border-l-2 border-transparent hover:border-[#F035BE]"
+                >
+                  📄 Download Whitepaper
+                </a>
+
+                {/* CTA Button */}
                 <div className="px-4 pt-4">
                   <Button 
                     href="https://t.me/+qqkgcx-8_kgyOGNh"
