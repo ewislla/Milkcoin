@@ -36,12 +36,10 @@ const Footer: React.FC = () => {
             className="text-center md:text-left"
           >
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <span className="text-4xl">🐄</span>
               <span className="text-2xl font-bold text-[#F035BE]">$MILK COIN</span>
             </div>
-            <p className="text-gray-400 text-sm">
-              To the MOOoon we go! 🚀
-            </p>
+            <p className="text-gray-400 text-sm">To the MOOoon we go! 🚀</p>
+            <p className="text-gray-400 text-sm">To the MOOoon we go! 🚀</p>
           </motion.div>
 
           {/* Social links */}
@@ -79,19 +77,21 @@ const Footer: React.FC = () => {
                 HGntnofpfzjnt3FzShUXAfWonim1ymKijrfF7PCAmoon
               </p>
             </div>
-            <div className="flex flex-col gap-2 text-sm">
+            <div className="flex flex-col gap-2 text-base font-semibold">
               <a
-                href="/assets/MNCO_Whitepaper.pdf"
+                href="/Milked_Nest_Coin_White_Paper.pdf"
                 download
-                className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300"
+                className="text-white hover:text-[#F035BE] transition-colors duration-300"
               >
-                Download Whitepaper
+                📄 Whitepaper
               </a>
               <a
-                href="#"
-                className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300"
+                href="https://cdn.discordapp.com/attachments/1399391472217755678/1401403248354660557/MNCO_Legal_Disclaimer.pdf?ex=689025fb&is=688ed47b&hm=ee54a0c4d69c416d0c971b5f2959aa3d54ddeb0da2a05687f4ddcea7f478c06f&"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#F035BE] transition-colors duration-300"
               >
-                Audit Report
+                ⚖️ Disclaimer
               </a>
             </div>
           </motion.div>
@@ -116,24 +116,6 @@ const Footer: React.FC = () => {
               <span>by the community</span>
             </div>
           </div>
-
-          {/* Disclaimer Link */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="mt-4"
-          >
-            <a
-              href="https://cdn.discordapp.com/attachments/1399391472217755678/1401403248354660557/MNCO_Legal_Disclaimer.pdf?ex=689025fb&is=688ed47b&hm=ee54a0c4d69c416d0c971b5f2959aa3d54ddeb0da2a05687f4ddcea7f478c06f&"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-[#F035BE] hover:underline"
-            >
-              View Legal Disclaimer (PDF)
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </footer>

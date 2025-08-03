@@ -11,69 +11,50 @@ const About: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-center mb-8"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F035BE]">
             What is MILK COIN?
           </h2>
-
-          {/* Added Image */}
-          <motion.img
-            src="/assets/about.jpeg" // Replace with your actual image URL
-            alt="Milk Coin Visual"
-            className="mx-auto rounded-xl shadow-lg"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-          />
         </motion.div>
 
-        {/* Content */}
+        {/* Grid Layout */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Removed cow emoji here */}
+          {/* Image on left for desktop, top for mobile */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <img
+              src="/assets/about.jpeg"
+              alt="Milk Coin Visual"
+              className="w-full rounded-xl shadow-lg"
+            />
+          </motion.div>
 
+          {/* Text Content */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="lg:col-span-2"
           >
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl mb-6 text-gray-300 leading-relaxed"
-            >
+            <p className="text-lg md:text-xl mb-6 text-gray-300 leading-relaxed">
               $MILK COIN is a fully community-driven crypto project built to protect small investors using smart astronaut cow mascots, anti-whale mechanics, and a utility-packed NFT ecosystem.
-            </motion.p>
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl mb-8 text-gray-300 leading-relaxed"
-            >
+            <p className="text-lg md:text-xl mb-8 text-gray-300 leading-relaxed">
               We're fun, secure, and always bullish.
-            </motion.p>
+            </p>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-r from-[#2A0344] to-[#F035BE]/20 p-6 rounded-2xl border border-[#F035BE]/30"
-            >
-              <p className="text-xl font-bold text-[#00F5FF] mb-2">
-                Highlight
-              </p>
+            <div className="bg-gradient-to-r from-[#2A0344] to-[#F035BE]/20 p-6 rounded-2xl border border-[#F035BE]/30">
+              <p className="text-xl font-bold text-[#00F5FF] mb-2">Highlight</p>
               <p className="text-lg text-white">
                 Moo-lennial DeFi meets intergalactic memes
               </p>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
