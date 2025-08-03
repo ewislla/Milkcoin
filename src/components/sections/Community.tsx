@@ -36,10 +36,10 @@ const Community: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F035BE]">
-            Join the Herd 🐄
+            Join the Herd 
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Connect with fellow space cows and stay updated on our journey
+            Connect with fellow space Bulls and stay updated on our journey
           </p>
         </motion.div>
         

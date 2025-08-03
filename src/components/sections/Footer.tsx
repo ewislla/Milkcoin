@@ -80,10 +80,17 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2 text-sm">
-              <a href="#" className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300">
-                Whitepaper
+              <a
+                href="/assets/MNCO_Whitepaper.pdf"
+                download
+                className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300"
+              >
+                Download Whitepaper
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-[#F035BE] transition-colors duration-300"
+              >
                 Audit Report
               </a>
             </div>
@@ -110,15 +117,23 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <motion.p
+          {/* Disclaimer Link */}
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-xs text-gray-500 mt-4"
+            className="mt-4"
           >
-            Disclaimer: Cryptocurrency investments carry risk. Please do your own research.
-          </motion.p>
+            <a
+              href="https://cdn.discordapp.com/attachments/1399391472217755678/1401403248354660557/MNCO_Legal_Disclaimer.pdf?ex=689025fb&is=688ed47b&hm=ee54a0c4d69c416d0c971b5f2959aa3d54ddeb0da2a05687f4ddcea7f478c06f&"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#F035BE] hover:underline"
+            >
+              View Legal Disclaimer (PDF)
+            </a>
+          </motion.div>
         </motion.div>
       </div>
     </footer>

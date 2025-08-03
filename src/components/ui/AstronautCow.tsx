@@ -79,7 +79,7 @@ const AstronautCow: React.FC<AstronautCowProps> = ({
           } : {}}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          🐄
+          
         </motion.span>
         
         {/* Space helmet overlay */}

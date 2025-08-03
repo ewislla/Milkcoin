@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 const phases = [
   {
     title: "Genesis",
-    period: "Q2 2025",
+    period: "Q3 2025",
     items: [
-      "Launch $MILKED token (SOL)",
+      "Launch $MILK token (SOL)",
       "Branding reveal + #GotMilked campaign",
       "Uniswap listing & LP lock",
       "Community launch platforms"
@@ -14,7 +14,7 @@ const phases = [
   },
   {
     title: "Utility Unleashed",
-    period: "Q3 2025",
+    period: "Q1 2026",
     items: [
       "Stake-to-Moo dApp",
       "NFT drop: Galactic Grazers",
@@ -23,7 +23,7 @@ const phases = [
   },
   {
     title: "Meme Economy",
-    period: "Q3 2025",
+    period: "Q2 2026",
     items: [
       "NFT Fusion & MooDAO voting",
       "Cream Token ($CMT) launch",

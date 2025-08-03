@@ -24,7 +24,7 @@ const NFT: React.FC = () => {
             Galactic Grazers
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-            Our NFT collection brings the cows to space. Upgrade, fuse, and unlock milk-tier rewards in the MOOniVerse.
+            Our NFT collection brings the Bulls to space. Upgrade, fuse, and unlock milk-tier rewards in the MOOniVerse.
           </p>
           <p className="text-lg text-[#00F5FF] font-semibold">
             Coming soon...
@@ -45,7 +45,7 @@ const NFT: React.FC = () => {
             >
               <div className="aspect-square bg-gradient-to-br from-[#F035BE]/20 to-[#00F5FF]/20 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
                 <span className="text-6xl">
-                  🐄
+                  
                 </span>
               </div>
 

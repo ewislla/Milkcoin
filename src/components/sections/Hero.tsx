@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
               className="text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed"
             >
               A revolutionary crypto movement powered by{' '}
-              <span className="text-[#F035BE] font-semibold">cows</span>,{' '}
+              <span className="text-[#F035BE] font-semibold">Bulls</span>,{' '}
               <span className="text-[#00F5FF] font-semibold">memes</span>, and{' '}
               <span className="text-white font-semibold">community</span>
             </motion.p>
