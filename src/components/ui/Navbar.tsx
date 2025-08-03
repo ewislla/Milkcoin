@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
 
                 {/* Whitepaper Link - Mobile */}
                 <a
-                  href="/whitepaper.pdf"
+                  href="/Milked_Nest_Coin_White_Paper.pdf"
                   download
                   className="block px-4 py-3 text-white hover:text-[#F035BE] hover:bg-[#F035BE]/10 transition-all duration-300 rounded-lg mx-4 font-semibold border-l-2 border-transparent hover:border-[#F035BE]"
                 >
