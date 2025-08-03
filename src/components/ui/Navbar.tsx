@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
             {/* Whitepaper Link - Desktop */}
             <motion.a
-              href="/whitepaper.pdf"
+              href="/Milked_Nest_Coin_White_Paper.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
